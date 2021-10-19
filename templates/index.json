@@ -177,17 +177,17 @@
         "swipe_on_mobile": false
       }
     },
-    "1634259370831920bc": {
-      "type": "featured-blog",
+    "carousel": {
+      "type": "carousel",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "Carousel",
         "blog": "blog",
+        "showMoreText": "Show More",
         "post_limit": 3,
         "show_image": true,
         "show_date": true,
         "show_author": true,
-        "soft_background": false,
-        "show_view_all": true
+        "soft_background": false
       }
     }
   },
@@ -198,6 +198,6 @@
     "collage",
     "video",
     "multi_column",
-    "1634259370831920bc"
+    "carousel"
   ]
 }
