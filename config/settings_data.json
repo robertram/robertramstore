@@ -56,18 +56,19 @@
               "subtext": ""
             }
           },
-          "efbad94c-b0b2-4bc7-826f-0be9f4a34c83": {
-            "type": "link_list",
+          "6b111fb0-649f-4470-92b8-ed04db1279b0": {
+            "type": "image",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "image": "shopify:\/\/shop_images\/shippingImage.jpg",
+              "image_width": 200,
+              "alignment": ""
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "efbad94c-b0b2-4bc7-826f-0be9f4a34c83"
+          "6b111fb0-649f-4470-92b8-ed04db1279b0"
         ],
         "settings": {
           "color_scheme": "background-1",
