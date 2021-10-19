@@ -55,11 +55,19 @@
               "heading": "Heading",
               "subtext": ""
             }
+          },
+          "efbad94c-b0b2-4bc7-826f-0be9f4a34c83": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "efbad94c-b0b2-4bc7-826f-0be9f4a34c83"
         ],
         "settings": {
           "color_scheme": "background-1",
