@@ -10,20 +10,23 @@
 -%}
 
 <div class="blog page-width">
-  <div class="page-width-desktop page-width-tablet">
     <h1>{{section.settings.heading}}</h1>
     <p>{{section.settings.description}}</p>
-    <ul id="Slider-{{ section.id }}"
-      class="carouselPostsContainer blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--4-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
-      role="list"
-    >
-      {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-        <li class="carouselItem">
-          {% render 'custom-article-card', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}
-        </li>
-      {%- endfor -%}
-    </ul>
-  </div>
+    {% if posts_displayed == 0 %}
+    <h3>{{section.settings.noPostsMessage}}</h3>
+    {%endif%}
+    <slider-component class="slider-mobile-gutter">
+      <ul id="Slider-{{ section.id }}"
+        class="carouselPostsContainer blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--4-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+        role="list"
+      >
+        {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+          <li class="carouselItem grid__item">
+            {% render 'custom-article-card', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </slider-component>
 </div>
 
 {% schema %}
@@ -42,6 +45,12 @@
       "type": "text",
       "id": "description",
       "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "noPostsMessage",
+      "label": "No Posts Message",
+      "default": "No posts available"
     },
     {
       "type": "blog",
