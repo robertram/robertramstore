@@ -93,6 +93,7 @@
       "settings": {
         "heading": "Blog",
         "description": "Read about us",
+        "noPostsMessage": "No posts available",
         "blog": "blog",
         "show_image": true,
         "showMoreText": "Show More"
