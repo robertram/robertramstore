@@ -57,7 +57,7 @@
           "type": "button",
           "settings": {
             "button_label": "Buy",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify:\/\/blogs\/blog",
             "button_style_secondary": false
           }
         }
